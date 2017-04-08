@@ -3,13 +3,6 @@ FROM ubuntu:16.04
 MAINTAINER Joseph Ian Farillas <jfarillas@gmail.com>
 
 RUN export LC_ALL=C
-RUN pip install --upgrade setuptools
-
-RUN locale-gen en_US.UTF-8
-
-ENV LANG en_us.UTF-8
-ENV LANGUAGE es_US:en
-ENV LC_ALL en_US.UTF-8
 
 RUN apt-get update \
     && apt-get install -y curl zip unzip git software-properties-common \
