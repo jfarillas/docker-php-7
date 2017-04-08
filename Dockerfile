@@ -1,6 +1,9 @@
 FROM ubuntu:16.04
 
-MAINTAINER Jose Fonseca <jose@ditecnologia.com>
+MAINTAINER Joseph Ian Farillas <jfarillas@gmail.com>
+
+RUN export LC_ALL=C
+RUN pip install --upgrade setuptools
 
 RUN locale-gen en_US.UTF-8
 
