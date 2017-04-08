@@ -9,7 +9,7 @@ RUN apt-get update \
     && add-apt-repository -y ppa:ondrej/php \
     && apt-get update
 
-RUN apt-get install -y php7.0-fpm php7.0-cli php7.0-mcrypt php7.0-gd php7.0-mysql \
+RUN apt-get install -y --allow-unauthenticated php7.0-fpm php7.0-cli php7.0-mcrypt php7.0-gd php7.0-mysql \
        php7.0-pgsql php7.0-imap php-memcached php7.0-mbstring php7.0-xml php7.0-curl \
        php7.0-intl php7.0-pdo-dblib php7.0-redis php-apcu php7.0-readline \
        php7.0-xml php7.0-zip php7.0-sqlite3
